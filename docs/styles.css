@@ -196,6 +196,14 @@ body.dark .featured-btn {
 body.dark .featured-btn:hover {
     background: #1a7ed6;
 }
+body.dark #scrollTopBtn {
+    background: #3399ff;
+    color: white;
+}
+
+body.dark #scrollTopBtn:hover {
+    background: #1a7ed6;
+}
 
 
 /* Skills section */
@@ -371,6 +379,27 @@ body.dark .success-box {
 
 .featured-btn:hover {
     background: #e6e6e6;
+}
+/* Scroll to top button */
+#scrollTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #0077ff;
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+    background: #005fcc;
+    transform: translateY(-3px);
 }
 
 
