@@ -140,6 +140,24 @@
     });
     </script>
     <script>
+    const scrollBtn = document.getElementById("scrollTopBtn");
+
+    // Show button when scrolling down
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+            scrollBtn.style.display = "block";
+        } else {
+            scrollBtn.style.display = "none";
+        }
+    });
+
+    // Scroll to top when clicked
+    scrollBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+    </script>
+
+    <script>
     // Show success message if redirected after form submission
     if (window.location.hash === "#contact") {
         const box = document.getElementById("success-message");
@@ -150,6 +168,6 @@
     </script>
 
 
-
+<button id="scrollTopBtn">↑</button>
 </body>
 </html>
