@@ -142,7 +142,9 @@
     <script>
     const scrollBtn = document.getElementById("scrollTopBtn");
 
-    // Show button when scrolling down
+    <script>
+    const scrollBtn = document.getElementById("scrollTopBtn");
+
     window.addEventListener("scroll", () => {
         if (window.scrollY > 300) {
             scrollBtn.style.display = "block";
@@ -151,11 +153,11 @@
         }
     });
 
-    // Scroll to top when clicked
     scrollBtn.addEventListener("click", () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
     </script>
+
 
     <script>
     // Show success message if redirected after form submission
@@ -169,5 +171,6 @@
 
 
 <button id="scrollTopBtn">↑</button>
+
 </body>
 </html>
