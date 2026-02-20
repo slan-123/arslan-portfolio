@@ -94,3 +94,41 @@ footer {
     background: #222;
     color: white;
 }
+/* Dark mode */
+body.dark {
+    background: #121212;
+    color: #e4e4e4;
+}
+
+body.dark nav {
+    background: #1e1e1e;
+}
+
+body.dark section {
+    background: #1e1e1e;
+    color: #e4e4e4;
+}
+
+body.dark .card {
+    background: #1e1e1e;
+    box-shadow: 0 4px 10px rgba(255,255,255,0.05);
+}
+
+body.dark footer {
+    background: #1e1e1e;
+}
+
+#dark-toggle {
+    margin-left: 20px;
+    padding: 6px 10px;
+    background: #444;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#dark-toggle:hover {
+    background: #666;
+}
+
