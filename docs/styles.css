@@ -147,11 +147,10 @@ body.dark header {
     background: #1a1a1a;
     color: #ffffff;
 }
-body, header, section, nav, .card, footer {
-    transition: background 0.3s ease, color 0.3s ease;
+/* Smooth transitions for theme switching */
+body, header, section, nav, .card, footer, h1, h2, h3, p {
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
-body, header, section, nav, .card, footer {
-    transition: background 0.3s ease, color 0.3s ease;
-}
+
 
 
