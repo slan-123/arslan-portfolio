@@ -149,7 +149,7 @@ body.dark header {
 }
 /* Smooth transitions for theme switching */
 body, header, section, nav, .card, footer, h1, h2, h3, p {
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 1.0s ease, color 1.0s ease;
 }
 #dark-toggle {
     margin-left: 20px;
@@ -162,9 +162,6 @@ body, header, section, nav, .card, footer, h1, h2, h3, p {
 }
 body.dark #dark-toggle {
     border-color: #ccc;
-}
-body, header, section, nav, .card, footer, h1, h2, h3, p {
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 
