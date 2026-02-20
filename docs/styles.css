@@ -245,6 +245,20 @@ body.dark .contact-item a {
 .contact-form button:hover {
     background: #005fcc;
 }
+body.dark .contact-form input,
+body.dark .contact-form textarea {
+    background: #2a2a2a;
+    color: #ffffff;
+    border: 1px solid #444;
+}
+
+body.dark .contact-form button {
+    background: #3399ff;
+}
+
+body.dark .contact-form button:hover {
+    background: #1a7ed6;
+}
 
 
 
