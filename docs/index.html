@@ -76,6 +76,9 @@
     <section id="contact">
     <h2>Contact Me</h2>
     <p>If you'd like to get in touch, send me a message using the form below.</p>
+    <div id="success-message" style="display:none;" class="success-box">
+    Your message has been sent successfully!
+    </div>
 
     <form action="https://formsubmit.co/arslan.raiees06@gmail.com" method="POST" class="contact-form">
 
@@ -93,6 +96,8 @@
         <textarea name="message" rows="5" required></textarea>
 
         <button type="submit">Send Message</button>
+        <input type="hidden" name="_next" value="https://slan123.github.io/arslan-portfolio/#contact">
+
     </form>
     </section>
 
@@ -114,6 +119,16 @@
         }
     });
     </script>
+    <script>
+    // Show success message if redirected after form submission
+    if (window.location.hash === "#contact") {
+        const box = document.getElementById("success-message");
+        if (box) {
+            box.style.display = "block";
+        }
+    }
+    </script>
+
 
 
 </body>
