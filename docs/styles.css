@@ -175,6 +175,13 @@ body.dark .skill:hover {
 body.dark .contact-item a {
     color: #66aaff;
 }
+body.dark .profile-card img {
+    border-color: #66aaff;
+}
+
+body.dark .profile-text p {
+    color: #cccccc;
+}
 
 
 /* Skills section */
@@ -198,6 +205,34 @@ body.dark .contact-item a {
 .skill:hover {
     background: #d0d0d0;
 }
+/* Profile card */
+.profile-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.profile-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #0077ff;
+}
+
+.profile-text h3 {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.profile-text p {
+    margin-top: 5px;
+    max-width: 400px;
+}
+
 /* Contact section */
 .contact-container {
     margin-top: 20px;
