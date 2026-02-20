@@ -142,5 +142,16 @@ body.dark h1 {
 body.dark header {
     background: #1a1a1a;
 }
+/* Dark mode header */
+body.dark header {
+    background: #1a1a1a;
+    color: #ffffff;
+}
+body, header, section, nav, .card, footer {
+    transition: background 0.3s ease, color 0.3s ease;
+}
+body, header, section, nav, .card, footer {
+    transition: background 0.3s ease, color 0.3s ease;
+}
 
 
