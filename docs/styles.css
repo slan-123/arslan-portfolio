@@ -172,6 +172,10 @@ body.dark .skill {
 body.dark .skill:hover {
     background: #3a3a3a;
 }
+body.dark .contact-item a {
+    color: #66aaff;
+}
+
 
 /* Skills section */
 .skills-container {
@@ -193,6 +197,22 @@ body.dark .skill:hover {
 
 .skill:hover {
     background: #d0d0d0;
+}
+/* Contact section */
+.contact-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-item a {
+    color: #0077ff;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
 }
 
 
