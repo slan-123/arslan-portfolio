@@ -151,6 +151,21 @@ body.dark header {
 body, header, section, nav, .card, footer, h1, h2, h3, p {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+#dark-toggle {
+    margin-left: 20px;
+    padding: 6px 10px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+body.dark #dark-toggle {
+    border-color: #ccc;
+}
+body, header, section, nav, .card, footer, h1, h2, h3, p {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
 
 
 
