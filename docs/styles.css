@@ -163,6 +163,37 @@ body, header, section, nav, .card, footer, h1, h2, h3, p {
 body.dark #dark-toggle {
     border-color: #ccc;
 }
+body.dark .skill {
+    background: #2a2a2a;
+    color: #ffffff;
+    box-shadow: 0 2px 6px rgba(255,255,255,0.05);
+}
+
+body.dark .skill:hover {
+    background: #3a3a3a;
+}
+
+/* Skills section */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.skill {
+    background: #e8e8e8;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-weight: 600;
+    color: #333;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.skill:hover {
+    background: #d0d0d0;
+}
 
 
 
