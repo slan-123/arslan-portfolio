@@ -182,6 +182,20 @@ body.dark .profile-card img {
 body.dark .profile-text p {
     color: #cccccc;
 }
+body.dark .featured-card {
+    background: #1a1a1a;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(255,255,255,0.05);
+}
+
+body.dark .featured-btn {
+    background: #3399ff;
+    color: white;
+}
+
+body.dark .featured-btn:hover {
+    background: #1a7ed6;
+}
 
 
 /* Skills section */
@@ -309,6 +323,54 @@ body.dark .success-box {
     background: #1f3b1f;
     border-color: #4fa64f;
     color: #b6ffb6;
+}
+/* Featured project */
+#featured {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.featured-card {
+    background: #0077ff;
+    color: white;
+    padding: 40px;
+    width: 80%;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.featured-card h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+
+.featured-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.featured-card p {
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+}
+
+.featured-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: white;
+    color: #0077ff;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.featured-btn:hover {
+    background: #e6e6e6;
 }
 
 
