@@ -73,27 +73,29 @@
         <div class="skill">Problem Solving</div>
 
     </div>
-    </section>
     <section id="contact">
     <h2>Contact Me</h2>
+    <p>If you'd like to get in touch, send me a message using the form below.</p>
 
-    <p>If you'd like to get in touch, feel free to reach out using the details below.</p>
+    <form action="https://formsubmit.co/arslan.raiees06@gmail.com" method="POST" class="contact-form">
 
-    <div class="contact-container">
-        <div class="contact-item">
-            <strong>Email:</strong> 
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=arslan.raiees06@gmail.com">
-    arslan.raiees06@gmail.com
-</a>
+        <!-- FormSubmit settings -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
 
-        </div>
+        <label>Your Name</label>
+        <input type="text" name="name" required>
 
-        <div class="contact-item">
-            <strong>GitHub:</strong> 
-            <a href="https://github.com/slan123">github.com/slan123</a>
-        </div>
-    </div>
+        <label>Your Email</label>
+        <input type="email" name="email" required>
+
+        <label>Your Message</label>
+        <textarea name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
     </section>
+
 
 
     <footer>
