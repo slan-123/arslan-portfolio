@@ -259,6 +259,22 @@ body.dark .contact-form button {
 body.dark .contact-form button:hover {
     background: #1a7ed6;
 }
+.success-box {
+    background: #d4ffd4;
+    border: 1px solid #8cd98c;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    color: #2b662b;
+    font-weight: 600;
+}
+
+/* Dark mode version */
+body.dark .success-box {
+    background: #1f3b1f;
+    border-color: #4fa64f;
+    color: #b6ffb6;
+}
 
 
 
