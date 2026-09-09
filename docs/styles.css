@@ -799,3 +799,63 @@ footer {
         justify-content: center;
     }
 }
+/* =========================
+   PROJECT PAGE
+========================= */
+
+.project-header {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 90px 20px 70px;
+    text-align: center;
+}
+
+.project-header h1 {
+    margin: 0 0 20px;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+}
+
+.project-intro {
+    max-width: 750px;
+    margin: 0 auto 30px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    opacity: 0.8;
+}
+
+.project-header .hero-buttons {
+    justify-content: center;
+}
+
+.gameplay-placeholder {
+    min-height: 250px;
+    border: 2px dashed #cbd5e1;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    background: #f8fafc;
+}
+
+.gameplay-placeholder span {
+    font-size: 3rem;
+}
+
+.gameplay-placeholder p {
+    margin: 0;
+    opacity: 0.6;
+}
+
+.dark .gameplay-placeholder {
+    background: #111827;
+    border-color: #374151;
+}
+
+@media (max-width: 700px) {
+    .project-header {
+        padding: 60px 20px 50px;
+    }
+}
