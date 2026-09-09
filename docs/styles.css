@@ -576,3 +576,130 @@ footer a {
         padding: 30px 20px;
     }
 }
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-label {
+    margin: 0 0 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    opacity: 0.7;
+}
+
+.hero-text h1 {
+    margin: 0 0 20px;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    line-height: 1.05;
+}
+
+.hero-description {
+    max-width: 650px;
+    margin: 0 0 30px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    opacity: 0.85;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 13px 22px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-btn:hover {
+    transform: translateY(-3px);
+}
+
+.hero-btn.primary {
+    background: #2563eb;
+    color: white;
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.25);
+}
+
+.hero-btn.secondary {
+    background: transparent;
+    color: inherit;
+    border: 2px solid currentColor;
+}
+
+.hero-school {
+    margin: 15px auto 0;
+    padding: 0 20px;
+    max-width: 1100px;
+    font-size: 0.95rem;
+    opacity: 0.65;
+}
+
+.profile-card {
+    flex-shrink: 0;
+}
+
+.profile-placeholder {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+    box-shadow: 0 15px 40px rgba(37, 99, 235, 0.18);
+    border: 6px solid white;
+}
+
+.dark .profile-placeholder {
+    background: linear-gradient(135deg, #1e3a8a, #172554);
+    border-color: #1f2937;
+}
+
+@media (max-width: 700px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 35px;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-school {
+        text-align: center;
+    }
+
+    .profile-placeholder {
+        width: 170px;
+        height: 170px;
+        font-size: 4rem;
+    }
+}
