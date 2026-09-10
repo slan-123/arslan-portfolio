@@ -1487,3 +1487,215 @@ body.dark .problem-card::before {
     }
 
 }
+/* =========================
+   Game Development Page
+========================= */
+
+body.game-development-page .project-header {
+    position: relative;
+    overflow: hidden;
+}
+
+body.game-development-page .project-header::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background: rgba(37, 99, 235, 0.08);
+    top: -220px;
+    left: -150px;
+    pointer-events: none;
+}
+
+body.game-development-page .project-header::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: rgba(0, 119, 255, 0.06);
+    bottom: -180px;
+    right: -120px;
+    pointer-events: none;
+}
+
+body.game-development-page .project-header h1,
+body.game-development-page .project-header .project-intro,
+body.game-development-page .project-header .hero-buttons {
+    position: relative;
+    z-index: 1;
+}
+
+body.game-development-page .project-header .hero-label {
+    color: #2563eb;
+}
+
+
+/* =========================
+   Game Development Cards
+========================= */
+
+body.game-development-page .project-card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+}
+
+body.game-development-page .project-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #2563eb;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+body.game-development-page .project-card:hover::before {
+    transform: scaleX(1);
+}
+
+body.game-development-page .project-card .project-icon {
+    transition: transform 0.25s ease;
+}
+
+body.game-development-page .project-card:hover .project-icon {
+    transform: scale(1.1);
+}
+
+
+/* =========================
+   Featured / Previous Projects
+========================= */
+
+body.game-development-page .solution-card {
+    position: relative;
+    overflow: hidden;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background-color 0.4s ease;
+}
+
+body.game-development-page .solution-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+}
+
+body.game-development-page .solution-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: #2563eb;
+}
+
+body.game-development-page .solution-header {
+    margin-bottom: 20px;
+}
+
+body.game-development-page .solution-header h3 {
+    font-size: 1.35rem;
+}
+
+
+/* =========================
+   Game Development Tags
+========================= */
+
+body.game-development-page .problem-tags {
+    margin-top: 20px;
+}
+
+body.game-development-page .problem-tags span {
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+}
+
+body.game-development-page .problem-tags span:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   Section Text
+========================= */
+
+body.game-development-page section p {
+    line-height: 1.75;
+}
+
+body.game-development-page section > p {
+    max-width: 850px;
+}
+
+
+/* =========================
+   Dark Mode
+========================= */
+
+body.dark.game-development-page .project-header .hero-label {
+    color: #60a5fa;
+}
+
+body.dark.game-development-page .project-header::before {
+    background: rgba(37, 99, 235, 0.12);
+}
+
+body.dark.game-development-page .project-header::after {
+    background: rgba(37, 99, 235, 0.08);
+}
+
+body.dark.game-development-page .project-card {
+    border-color: #30363d;
+}
+
+body.dark.game-development-page .solution-card {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+body.dark.game-development-page .solution-card:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+body.dark.game-development-page .solution-card::before {
+    background: #60a5fa;
+}
+
+body.dark.game-development-page .project-card::before {
+    background: #60a5fa;
+}
+
+
+/* =========================
+   Game Development Mobile
+========================= */
+
+@media (max-width: 700px) {
+
+    body.game-development-page .project-header::before {
+        width: 240px;
+        height: 240px;
+        top: -120px;
+        left: -110px;
+    }
+
+    body.game-development-page .project-header::after {
+        width: 200px;
+        height: 200px;
+        bottom: -110px;
+        right: -90px;
+    }
+
+    body.game-development-page .solution-card {
+        padding: 22px;
+    }
+
+}
