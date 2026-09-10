@@ -758,7 +758,10 @@ footer {
     border-color: #374151;
 }
 
-
+/* Prevent the sticky navigation from covering the Problem Solving heading */
+#problem-solving {
+    scroll-margin-top: 90px;
+}
 /* =========================
    Bebras Solutions
 ========================= */
