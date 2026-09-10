@@ -2,12 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Mohammed Arslan — Portfolio</title>
+
     <link rel="stylesheet" href="styles.css">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <!-- Navigation Bar -->
@@ -17,15 +21,20 @@
         <div class="nav-right">
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
-            <a href="#problem-solving">Problem Solving</a>
+            <a href="bebras.html#problem-solving">Problem Solving</a>
             <a href="https://github.com/slan-123">GitHub</a>
             <button id="dark-toggle">🌙</button>
         </div>
     </nav>
 
+
+    <!-- Hero -->
     <header>
+
         <div class="hero-content">
+
             <div class="hero-text">
+
                 <p class="hero-label">STUDENT DEVELOPER</p>
 
                 <h1>Hi, I'm Arslan</h1>
@@ -36,39 +45,64 @@
                 </p>
 
                 <div class="hero-buttons">
-                    <a href="#projects" class="hero-btn primary">View My Projects</a>
-                    <a href="#about" class="hero-btn secondary">About Me</a>
+                    <a href="#projects" class="hero-btn primary">
+                        View My Projects
+                    </a>
+
+                    <a href="#about" class="hero-btn secondary">
+                        About Me
+                    </a>
                 </div>
+
             </div>
 
+
             <div class="profile-card">
+
                 <div class="profile-placeholder">
                     <span>👨‍💻</span>
                 </div>
+
             </div>
+
         </div>
+
 
         <p class="hero-school">
             Year 10 • Hautlieu School Jersey • Aspiring Computer Scientist
         </p>
+
     </header>
 
+
+    <!-- Featured Project -->
     <section id="featured">
+
         <div class="featured-card">
+
             <h2>Featured Project</h2>
 
             <h3>Bebras Solutions</h3>
 
             <p>
-                A collection of Python solutions with explanations for Bebras computational thinking challenges.
-                This project demonstrates problem-solving, algorithmic thinking, and clean code.
+                A collection of computational thinking problems from the Bebras
+                Challenge, including my reasoning, key observations and solutions.
+                This project demonstrates logical thinking, algorithms and
+                computational problem solving.
             </p>
 
-            <a href="bebras.html" class="featured-btn">View Project</a>
+            <a href="bebras.html" class="featured-btn">
+                View Project
+            </a>
+
         </div>
+
     </section>
 
+
+    <!-- About -->
     <section id="about" class="fade-in">
+
         <h2>About Me</h2>
 
         <p>
@@ -88,21 +122,28 @@
             I'm always working on new projects to improve my programming skills
             and build a stronger understanding of Computer Science.
         </p>
+
     </section>
 
+
+    <!-- Projects -->
     <section id="projects" class="fade-in">
+
         <h2>Projects</h2>
 
         <div class="card-container">
 
+
+            <!-- Bebras -->
             <div class="project-card fade-in">
+
                 <div class="project-icon">🧠</div>
 
                 <h3>Bebras Solutions</h3>
 
                 <p>
-                    Python solutions and explanations for Bebras computational
-                    thinking challenges, focusing on algorithms and problem solving.
+                    Computational thinking problems from the Bebras Challenge,
+                    with detailed reasoning, key observations and solutions.
                 </p>
 
                 <div class="project-tags">
@@ -114,9 +155,13 @@
                 <a href="bebras.html" class="project-link">
                     View Project →
                 </a>
+
             </div>
 
+
+            <!-- Game Development -->
             <div class="project-card fade-in">
+
                 <div class="project-icon">🎮</div>
 
                 <h3>Game Development</h3>
@@ -135,9 +180,13 @@
                 <a href="https://github.com/slan-123/Life-Sim-2D" class="project-link">
                     View on GitHub →
                 </a>
+
             </div>
 
+
+            <!-- Life Simulator -->
             <div class="project-card fade-in">
+
                 <div class="project-icon">🏙️</div>
 
                 <h3>Life Simulator 2D</h3>
@@ -158,384 +207,17 @@
                 <a href="life-sim.html" class="project-link">
                     View Project →
                 </a>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- =========================
-         PROBLEM SOLVING
-    ========================== -->
-
-    <section id="problem-solving" class="fade-in">
-
-        <h2>Problem Solving</h2>
-
-        <p class="problem-solving-intro">
-            I enjoy breaking difficult problems into smaller parts, looking for
-            patterns and testing different approaches until I find a simple solution.
-            Here are some computational thinking problems I've worked through.
-        </p>
-
-        <div class="problem-container">
-
-            <!-- DYE BLOCKS -->
-
-            <div class="problem-card fade-in">
-
-                <div class="problem-top">
-                    <div class="problem-icon">🧪</div>
-
-                    <div class="problem-title">
-                        <h3>Dye Blocks</h3>
-                        <span class="difficulty hard">Hard</span>
-                    </div>
-                </div>
-
-                <p class="problem-description">
-                    A problem involving dyes made from three blocks of type A or C.
-                    Adding one dye to another changes each block according to a set
-                    of rules. The goal was to swap the dyes in containers 1 and 3
-                    while leaving container 2 unchanged.
-                </p>
-
-                <div class="problem-section">
-                    <h4>💭 My reasoning</h4>
-
-                    <p>
-                        I first noticed that container 2 already contained
-                        <strong>ACA</strong>, which was its required final result.
-                        This meant there was no reason to use container 2, because
-                        changing it would only make the problem more complicated.
-                    </p>
-
-                    <p>
-                        I could therefore focus exclusively on containers 1 and 3.
-                        I experimented with the possible swaps and found the sequence:
-                    </p>
-
-                    <div class="sequence">
-                        3 → 1 → 3 → 1
-                    </div>
-
-                    <p>
-                        Starting with <strong>CAC | ACA | AAC</strong>, the swaps
-                        produce <strong>ACC | ACA | AAC</strong>, then
-                        <strong>ACC | ACA | CAC</strong>, and finally
-                        <strong>AAC | ACA | CAC</strong>.
-                    </p>
-                </div>
-
-                <div class="problem-section">
-                    <h4>💡 Key observation</h4>
-
-                    <p>
-                        The most important step was recognising that container 2
-                        was already correct. By identifying something that did not
-                        need to change, I could eliminate unnecessary possibilities
-                        and focus only on containers 1 and 3.
-                    </p>
-                </div>
-
-                <div class="problem-answer">
-                    <strong>✅ Answer:</strong> 3 → 1 → 3 → 1
-                </div>
-
-                <div class="problem-tags">
-                    <span>Pattern Recognition</span>
-                    <span>Logic</span>
-                    <span>Search-Space Reduction</span>
-                </div>
-
-            </div>
-
-
-            <!-- ARISTO'S CARDS -->
-
-            <div class="problem-card fade-in">
-
-                <div class="problem-top">
-                    <div class="problem-icon">🃏</div>
-
-                    <div class="problem-title">
-                        <h3>Aristo's Cards</h3>
-                        <span class="difficulty hard">Hard</span>
-                    </div>
-                </div>
-
-                <p class="problem-description">
-                    Aristo claims that if one side of a card shows a vowel,
-                    the other side must always show an even number. The task
-                    was to determine which cards must be turned over to test
-                    whether the claim is true.
-                </p>
-
-                <div class="problem-section">
-                    <h4>💭 My reasoning</h4>
-
-                    <p>
-                        I knew that <strong>E</strong> is a vowel, so I had to
-                        turn it over. If there was an odd number behind it,
-                        the claim would immediately be false.
-                    </p>
-
-                    <p>
-                        I also had to turn over <strong>7</strong>. If there was
-                        a vowel on the other side, the claim would also be false.
-                    </p>
-
-                    <p>
-                        I did not need to turn over <strong>V</strong>, because
-                        the claim says nothing about what must be behind a
-                        consonant.
-                    </p>
-
-                    <p>
-                        I also did not need to turn over <strong>2</strong>,
-                        because the claim never says that every even number
-                        must have a vowel on its other side.
-                    </p>
-                </div>
-
-                <div class="problem-section">
-                    <h4>💡 Key observation</h4>
-
-                    <p>
-                        I focused on finding the cards that could actually
-                        <strong>disprove</strong> the claim instead of checking
-                        every card.
-                    </p>
-
-                    <p>
-                        The claim is essentially <strong>vowel → even</strong>,
-                        so I needed to check vowels and odd numbers.
-                    </p>
-                </div>
-
-                <div class="problem-answer">
-                    <strong>✅ Answer:</strong> E and 7
-                </div>
-
-                <div class="problem-tags">
-                    <span>Logical Thinking</span>
-                    <span>Conditional Logic</span>
-                    <span>Problem Solving</span>
-                </div>
-
-            </div>
-
-
-            <!-- MAGIC KEY -->
-
-            <div class="problem-card fade-in">
-
-                <div class="problem-top">
-                    <div class="problem-icon">🪄</div>
-
-                    <div class="problem-title">
-                        <h3>Magic Key</h3>
-                        <span class="difficulty medium">Medium</span>
-                    </div>
-                </div>
-
-                <p class="problem-description">
-                    A magic key writes a sequence of numbers to a file.
-                    Each press adds a new block counting down from the press
-                    number to 1. The task was to find the number at position 127.
-                </p>
-
-                <div class="problem-section">
-                    <h4>💭 My reasoning</h4>
-
-                    <p>
-                        I noticed that each press adds a number of values equal
-                        to the press count. So after 15 presses, the total number
-                        of values is:
-                    </p>
-
-                    <div class="sequence">
-                        1 + 2 + 3 + ... + 15 = 120
-                    </div>
-
-                    <p>
-                        This means position 120 is the end of the 15th block.
-                        The 16th block starts at position 121:
-                    </p>
-
-                    <div class="sequence">
-                        16, 15, 14, 13, 12, 11, 10, ...
-                    </div>
-
-                    <p>
-                        Therefore, position 127 contains <strong>10</strong>.
-                    </p>
-                </div>
-
-                <div class="problem-section">
-                    <h4>💡 Key observation</h4>
-
-                    <p>
-                        I didn't need to generate the entire sequence. I used
-                        the pattern of the increasing block lengths to jump
-                        directly to the section containing position 127.
-                    </p>
-                </div>
-
-                <div class="problem-answer">
-                    <strong>✅ Answer:</strong> 10
-                </div>
-
-                <div class="problem-tags">
-                    <span>Pattern Recognition</span>
-                    <span>Mathematical Reasoning</span>
-                    <span>Efficiency</span>
-                </div>
-
-            </div>
-
-
-            <!-- FLOWER PLANTING -->
-
-            <div class="problem-card fade-in">
-
-                <div class="problem-top">
-                    <div class="problem-icon">🌸</div>
-
-                    <div class="problem-title">
-                        <h3>Flower Planting</h3>
-                        <span class="difficulty medium">Medium</span>
-                    </div>
-                </div>
-
-                <p class="problem-description">
-                    A robot plants flowers according to a set of instructions.
-                    It follows signs, remembers the flower it planted, and
-                    copies that flower into the next empty position.
-                </p>
-
-                <div class="problem-section">
-                    <h4>💭 My reasoning</h4>
-
-                    <p>
-                        I started at the position marked with X and followed
-                        the robot's instructions step by step.
-                    </p>
-
-                    <p>
-                        Each time the robot reached a sign, I recorded the
-                        flower it planted. It then moved right to the next
-                        empty position and planted the same flower there.
-                    </p>
-
-                    <p>
-                        Following this process gave the final arrangement:
-                    </p>
-
-                    <div class="sequence">
-                        1 | 1 | 2 | 3 | 2 | 2 | 3 | 2 | 1 | 1
-                    </div>
-                </div>
-
-                <div class="problem-section">
-                    <h4>💡 Key observation</h4>
-
-                    <p>
-                        I noticed that the flowers from the signs were effectively
-                        being copied into the empty spaces. By carefully following
-                        the robot's movement, I could work out the final arrangement
-                        without needing to guess.
-                    </p>
-                </div>
-
-                <div class="problem-answer">
-                    <strong>✅ Answer:</strong> 1, 1, 2, 3, 2, 2, 3, 2, 1, 1
-                </div>
-
-                <div class="problem-tags">
-                    <span>Simulation</span>
-                    <span>Algorithms</span>
-                    <span>Logical Thinking</span>
-                </div>
-
-            </div>
-
-
-            <!-- HAPPY CIRCLE -->
-
-            <div class="problem-card fade-in">
-
-                <div class="problem-top">
-                    <div class="problem-icon">😊</div>
-
-                    <div class="problem-title">
-                        <h3>Happy Circle</h3>
-                        <span class="difficulty medium">Medium</span>
-                    </div>
-                </div>
-
-                <p class="problem-description">
-                    Six friends need to sit around a circular table.
-                    Each friend has preferences about who they want to sit
-                    next to. The goal is to find an arrangement where everyone
-                    is happy with both of their neighbours.
-                </p>
-
-                <div class="problem-section">
-                    <h4>💭 My reasoning</h4>
-
-                    <p>
-                        I treated the problem like a puzzle where each person
-                        had to satisfy the preferences of the people sitting
-                        next to them.
-                    </p>
-
-                    <p>
-                        I tried different arrangements around the circle and
-                        checked the neighbours of each person. By using the
-                        preferences to rule out unsuitable arrangements, I found
-                        an order where everyone was happy.
-                    </p>
-
-                    <div class="sequence">
-                        A → E → C → F → D → B
-                    </div>
-
-                    <p>
-                        Because the table is circular, <strong>B</strong> is
-                        also next to <strong>A</strong>, completing the circle.
-                    </p>
-                </div>
-
-                <div class="problem-section">
-                    <h4>💡 Key observation</h4>
-
-                    <p>
-                        The important part was thinking about the problem as a
-                        set of <strong>constraints</strong>. Instead of only
-                        checking one person at a time, I had to make sure the
-                        entire arrangement worked together.
-                    </p>
-                </div>
-
-                <div class="problem-answer">
-                    <strong>✅ Answer:</strong> A → E → C → F → D → B
-                </div>
-
-                <div class="problem-tags">
-                    <span>Constraint Solving</span>
-                    <span>Logical Reasoning</span>
-                    <span>Combinatorial Thinking</span>
-                </div>
 
             </div>
 
         </div>
+
     </section>
 
 
-    <!-- SKILLS -->
-
+    <!-- Skills -->
     <section id="skills" class="fade-in">
+
         <h2>Skills</h2>
 
         <div class="skills-container">
@@ -566,12 +248,13 @@
             </div>
 
         </div>
+
     </section>
 
 
-    <!-- CONTACT -->
-
+    <!-- Contact -->
     <section id="contact" class="fade-in">
+
         <h2>Get In Touch</h2>
 
         <p>
@@ -583,7 +266,12 @@
             Your message has been sent successfully!
         </div>
 
-        <form action="https://formsubmit.co/arslan.raiees06@gmail.com" method="POST" class="contact-form">
+
+        <form
+            action="https://formsubmit.co/arslan.raiees06@gmail.com"
+            method="POST"
+            class="contact-form"
+        >
 
             <!-- FormSubmit settings -->
             <input type="hidden" name="_captcha" value="false">
@@ -598,7 +286,9 @@
             <label>Your Message</label>
             <textarea name="message" rows="5" required></textarea>
 
-            <button type="submit">Send Message</button>
+            <button type="submit">
+                Send Message
+            </button>
 
             <input
                 type="hidden"
@@ -607,12 +297,13 @@
             >
 
         </form>
+
     </section>
 
 
-    <!-- FOOTER -->
-
+    <!-- Footer -->
     <footer>
+
         <div class="footer-content">
 
             <div>
@@ -624,20 +315,23 @@
                 <a href="https://github.com/slan-123">GitHub</a>
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
-                <a href="#problem-solving">Problem Solving</a>
+                <a href="bebras.html#problem-solving">Problem Solving</a>
                 <a href="#contact">Contact</a>
             </div>
 
         </div>
 
+
         <div class="footer-bottom">
-            <p>© 2026 Mohammed Arslan. Built with HTML, CSS & JavaScript.</p>
+            <p>
+                © 2026 Mohammed Arslan. Built with HTML, CSS & JavaScript.
+            </p>
         </div>
+
     </footer>
 
 
     <!-- Dark Mode -->
-
     <script>
         const toggle = document.getElementById('dark-toggle');
 
@@ -654,7 +348,6 @@
 
 
     <!-- Success Message -->
-
     <script>
         if (window.location.hash === "#contact") {
             const box = document.getElementById("success-message");
@@ -667,7 +360,6 @@
 
 
     <!-- Fade In Animation -->
-
     <script>
         const faders = document.querySelectorAll('.fade-in');
 
@@ -684,7 +376,6 @@
 
 
     <!-- Scroll To Top -->
-
     <button id="scrollTopBtn">↑</button>
 
     <script>
