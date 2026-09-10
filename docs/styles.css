@@ -513,71 +513,61 @@ body.dark #scrollTopBtn {
 ========================= */
 
 footer {
-    text-align: center;
-    padding: 25px;
-    margin-top: 50px;
-    background: #15171a;
+    margin-top: 40px;
+    padding: 40px 20px 20px;
+    background: #111827;
     color: white;
-    transition: background-color 0.4s ease;
 }
 
-footer a {
-    color: #66aaff;
+.footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-content h3 {
+    margin: 0 0 8px;
+    font-size: 1.2rem;
+}
+
+.footer-content p {
+    margin: 0;
+    opacity: 0.7;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+}
+
+.footer-bottom {
+    max-width: 1100px;
+    margin: 30px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    text-align: center;
+    font-size: 0.85rem;
 }
 
 
 /* =========================
-   Mobile
-========================= */
-
-@media (max-width: 700px) {
-
-    nav {
-        padding: 15px 20px;
-    }
-
-    .nav-left {
-        font-size: 0.95rem;
-    }
-
-    nav a {
-        margin-left: 10px;
-        font-size: 0.9rem;
-    }
-
-    #dark-toggle {
-        margin-left: 10px;
-    }
-
-    header {
-        padding: 60px 20px 45px;
-    }
-
-    h1 {
-        font-size: 2.2rem;
-    }
-
-    .profile-card {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .profile-text {
-        text-align: center;
-    }
-
-    section {
-        width: 92%;
-        padding: 25px;
-    }
-
-    .featured-card {
-        width: 92%;
-        padding: 30px 20px;
-    }
-}
-/* =========================
-   HERO SECTION
+   Hero Section
 ========================= */
 
 .hero-content {
@@ -677,32 +667,11 @@ footer a {
     border-color: #1f2937;
 }
 
-@media (max-width: 700px) {
-    .hero-content {
-        flex-direction: column;
-        text-align: center;
-        gap: 35px;
-    }
 
-    .hero-description {
-        margin-left: auto;
-        margin-right: auto;
-    }
+/* =========================
+   Project Icons & Tags
+========================= */
 
-    .hero-buttons {
-        justify-content: center;
-    }
-
-    .hero-school {
-        text-align: center;
-    }
-
-    .profile-placeholder {
-        width: 170px;
-        height: 170px;
-        font-size: 4rem;
-    }
-}
 .project-icon {
     font-size: 2.2rem;
     margin-bottom: 12px;
@@ -732,75 +701,10 @@ footer a {
 .project-link {
     font-weight: 600;
 }
+
+
 /* =========================
-   FOOTER
-========================= */
-
-footer {
-    margin-top: 40px;
-    padding: 40px 20px 20px;
-    background: #111827;
-    color: white;
-}
-
-.footer-content {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-}
-
-.footer-content h3 {
-    margin: 0 0 8px;
-    font-size: 1.2rem;
-}
-
-.footer-content p {
-    margin: 0;
-    opacity: 0.7;
-}
-
-.footer-links {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.footer-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    opacity: 0.8;
-    transition: opacity 0.2s ease;
-}
-
-.footer-links a:hover {
-    opacity: 1;
-}
-
-.footer-bottom {
-    max-width: 1100px;
-    margin: 30px auto 0;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
-    text-align: center;
-    font-size: 0.85rem;
-}
-
-@media (max-width: 700px) {
-    .footer-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-links {
-        justify-content: center;
-    }
-}
-/* =========================
-   PROJECT PAGE
+   Project Page
 ========================= */
 
 .project-header {
@@ -854,207 +758,383 @@ footer {
     border-color: #374151;
 }
 
-@media (max-width: 700px) {
-    .project-header {
-        padding: 60px 20px 50px;
-    }
-}
+
 /* =========================
-BEBRAS SOLUTIONS
+   Bebras Solutions
 ========================= */
 
 .solution-card {
-padding: 28px;
-margin-top: 25px;
-border-radius: 16px;
-background: #f8fafc;
-border: 1px solid #e2e8f0;
-box-shadow: 0 8px 25px rgba(15, 23, 42, 0.06);
+    padding: 28px;
+    margin-top: 25px;
+    border-radius: 16px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.06);
 }
 
 .dark .solution-card {
-background: #111827;
-border-color: #374151;
+    background: #111827;
+    border-color: #374151;
 }
 
 .solution-header {
-display: flex;
-align-items: center;
-gap: 18px;
-margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 25px;
 }
 
 .solution-header h3 {
-margin: 0 0 4px;
+    margin: 0 0 4px;
 }
 
 .solution-header p {
-margin: 0;
-opacity: 0.65;
+    margin: 0;
+    opacity: 0.65;
 }
 
 .solution-number {
-width: 48px;
-height: 48px;
-border-radius: 12px;
-display: flex;
-align-items: center;
-justify-content: center;
-background: #2563eb;
-color: white;
-font-weight: 600;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2563eb;
+    color: white;
+    font-weight: 600;
 }
 
 .code-section h4,
 .explanation-section h4 {
-margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .solution-card pre {
-margin: 0;
-padding: 20px;
-overflow-x: auto;
-border-radius: 12px;
-background: #111827;
-color: #e5e7eb;
-font-family: Consolas, Monaco, monospace;
-font-size: 0.9rem;
-line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    overflow-x: auto;
+    border-radius: 12px;
+    background: #111827;
+    color: #e5e7eb;
+    font-family: Consolas, Monaco, monospace;
+    font-size: 0.9rem;
+    line-height: 1.6;
 }
 
 .explanation-section {
-margin-top: 25px;
+    margin-top: 25px;
 }
 
 .explanation-section p {
-line-height: 1.7;
+    line-height: 1.7;
 }
 
-@media (max-width: 700px) {
-.solution-card {
-padding: 20px;
-}
 
-```
-.solution-header {
-    align-items: flex-start;
-}
-```
-
-}
 /* =========================
-PROBLEM SOLVING
+   Problem Solving
 ========================= */
 
 .problem-solving-intro {
-max-width: 750px;
-line-height: 1.7;
-color: #666;
-margin-bottom: 25px;
+    max-width: 750px;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 25px;
 }
 
 .problem-container {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
 }
 
 .problem-card {
-background: #f8fafc;
-border: 1px solid #e2e8f0;
-border-radius: 16px;
-padding: 28px;
-box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
-transition: transform 0.25s ease, box-shadow 0.25s ease,
-background-color 0.4s ease, border-color 0.4s ease;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background-color 0.4s ease,
+        border-color 0.4s ease;
 }
 
 .problem-card:hover {
-transform: translateY(-6px);
-box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+}
+
+.problem-top {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 18px;
 }
 
 .problem-icon {
-font-size: 2.5rem;
-margin-bottom: 15px;
+    width: 58px;
+    height: 58px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    background: #eff6ff;
+    font-size: 2rem;
 }
 
-.problem-card h3 {
-margin: 0 0 10px;
-font-size: 1.4rem;
+.problem-title {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.problem-title h3 {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.difficulty {
+    display: inline-block;
+    padding: 4px 9px;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 600;
+}
+
+.difficulty.hard {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.difficulty.medium {
+    background: #fef3c7;
+    color: #92400e;
 }
 
 .problem-description {
-line-height: 1.6;
-color: #666;
+    line-height: 1.6;
+    color: #666;
+    margin-top: 0;
 }
 
 .problem-section {
-margin-top: 22px;
+    margin-top: 22px;
 }
 
 .problem-section h4 {
-margin: 0 0 7px;
-font-size: 0.95rem;
+    margin: 0 0 8px;
+    font-size: 0.95rem;
 }
 
 .problem-section p {
-margin: 0;
-line-height: 1.7;
-color: #555;
+    margin: 0 0 12px;
+    line-height: 1.7;
+    color: #555;
+}
+
+.problem-section p:last-child {
+    margin-bottom: 0;
+}
+
+.sequence {
+    margin: 16px 0;
+    padding: 13px 16px;
+    background: #eef4ff;
+    border-left: 4px solid #2563eb;
+    border-radius: 8px;
+    color: #1e40af;
+    font-weight: 600;
+    line-height: 1.6;
+    overflow-x: auto;
+}
+
+.problem-answer {
+    margin-top: 24px;
+    padding: 14px 16px;
+    border-radius: 10px;
+    background: #ecfdf5;
+    border: 1px solid #bbf7d0;
+    color: #166534;
+    line-height: 1.6;
 }
 
 .problem-tags {
-display: flex;
-flex-wrap: wrap;
-gap: 8px;
-margin-top: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 22px;
 }
 
 .problem-tags span {
-padding: 5px 10px;
-border-radius: 999px;
-background: #eff6ff;
-color: #2563eb;
-font-size: 0.78rem;
-font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 999px;
+    background: #eff6ff;
+    color: #2563eb;
+    font-size: 0.78rem;
+    font-weight: 600;
 }
 
-/* Dark mode */
+
+/* =========================
+   Problem Solving Dark Mode
+========================= */
 
 body.dark .problem-solving-intro {
-color: #aeb7c2;
+    color: #aeb7c2;
 }
 
 body.dark .problem-card {
-background: #161b22;
-border-color: #30363d;
-box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    background: #161b22;
+    border-color: #30363d;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 body.dark .problem-description,
 body.dark .problem-section p {
-color: #aeb7c2;
+    color: #aeb7c2;
+}
+
+body.dark .problem-icon {
+    background: #1e3a8a;
+}
+
+body.dark .difficulty.hard {
+    background: #7f1d1d;
+    color: #fecaca;
+}
+
+body.dark .difficulty.medium {
+    background: #78350f;
+    color: #fde68a;
+}
+
+body.dark .sequence {
+    background: #172554;
+    color: #dbeafe;
+    border-color: #3b82f6;
+}
+
+body.dark .problem-answer {
+    background: #052e16;
+    border-color: #166534;
+    color: #bbf7d0;
 }
 
 body.dark .problem-tags span {
-background: #1e3a8a;
-color: #dbeafe;
+    background: #1e3a8a;
+    color: #dbeafe;
 }
 
-/* Mobile */
+
+/* =========================
+   Mobile
+========================= */
 
 @media (max-width: 700px) {
 
-```
-.problem-container {
-    grid-template-columns: 1fr;
-}
+    nav {
+        padding: 15px 20px;
+    }
 
-.problem-card {
-    padding: 22px;
-}
-```
+    .nav-left {
+        font-size: 0.95rem;
+    }
 
-}
+    nav a {
+        margin-left: 10px;
+        font-size: 0.9rem;
+    }
 
+    #dark-toggle {
+        margin-left: 10px;
+    }
+
+    header {
+        padding: 60px 20px 45px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-text {
+        text-align: center;
+    }
+
+    section {
+        width: 92%;
+        padding: 25px;
+    }
+
+    .featured-card {
+        width: 92%;
+        padding: 30px 20px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 35px;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-school {
+        text-align: center;
+    }
+
+    .profile-placeholder {
+        width: 170px;
+        height: 170px;
+        font-size: 4rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+
+    .project-header {
+        padding: 60px 20px 50px;
+    }
+
+    .solution-card {
+        padding: 20px;
+    }
+
+    .solution-header {
+        align-items: flex-start;
+    }
+
+    .problem-container {
+        grid-template-columns: 1fr;
+    }
+
+    .problem-card {
+        padding: 22px;
+    }
+
+    .problem-top {
+        align-items: flex-start;
+    }
+}
