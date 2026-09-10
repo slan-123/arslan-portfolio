@@ -1699,3 +1699,52 @@ body.dark.game-development-page .project-card::before {
     }
 
 }
+/* =========================
+   Currently Learning
+========================= */
+
+#learning {
+    text-align: center;
+}
+
+.learning-intro {
+    max-width: 800px;
+    margin: 0 auto 35px;
+    line-height: 1.75;
+}
+
+.learning-card {
+    text-align: left;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.learning-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.1);
+}
+
+.learning-card .project-icon {
+    transition: transform 0.25s ease;
+}
+
+.learning-card:hover .project-icon {
+    transform: scale(1.1);
+}
+
+body.dark .learning-card {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+body.dark .learning-card:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 700px) {
+
+    .learning-intro {
+        margin-bottom: 25px;
+    }
+
+}
