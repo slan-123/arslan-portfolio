@@ -1,402 +1,710 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Mohammed Arslan — Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 
-```
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-```
-
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-```
-<!-- Navigation Bar -->
-<nav>
-<div class="nav-left">Mohammed Arslan</div>
-<div class="nav-right">
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#problem-solving">Problem Solving</a>
-    <a href="https://github.com/slan-123">GitHub</a>
-    <button id="dark-toggle">🌙</button>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-left">Mohammed Arslan</div>
 
-</div>
-</nav>
+        <div class="nav-right">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#problem-solving">Problem Solving</a>
+            <a href="https://github.com/slan-123">GitHub</a>
+            <button id="dark-toggle">🌙</button>
+        </div>
+    </nav>
 
-<header>
-    <div class="hero-content">
-        <div class="hero-text">
-            <p class="hero-label">STUDENT DEVELOPER</p>
+    <header>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-label">STUDENT DEVELOPER</p>
 
-            <h1>Hi, I'm Arslan </h1>
+                <h1>Hi, I'm Arslan</h1>
 
-            <p class="hero-description">
-                I love coding, problem solving, and building things from scratch.
-                I'm currently developing my skills in programming and Computer Science.
+                <p class="hero-description">
+                    I love coding, problem solving, and building things from scratch.
+                    I'm currently developing my skills in programming and Computer Science.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="hero-btn primary">View My Projects</a>
+                    <a href="#about" class="hero-btn secondary">About Me</a>
+                </div>
+            </div>
+
+            <div class="profile-card">
+                <div class="profile-placeholder">
+                    <span>👨‍💻</span>
+                </div>
+            </div>
+        </div>
+
+        <p class="hero-school">
+            Year 10 • Hautlieu School Jersey • Aspiring Computer Scientist
+        </p>
+    </header>
+
+    <section id="featured">
+        <div class="featured-card">
+            <h2>Featured Project</h2>
+
+            <h3>Bebras Solutions</h3>
+
+            <p>
+                A collection of Python solutions with explanations for Bebras computational thinking challenges.
+                This project demonstrates problem-solving, algorithmic thinking, and clean code.
             </p>
 
-            <div class="hero-buttons">
-                <a href="#projects" class="hero-btn primary">View My Projects</a>
-                <a href="#about" class="hero-btn secondary">About Me</a>
+            <a href="bebras.html" class="featured-btn">View Project</a>
+        </div>
+    </section>
+
+    <section id="about" class="fade-in">
+        <h2>About Me</h2>
+
+        <p>
+            I'm a Year 10 student at Hautlieu School Jersey with a strong interest
+            in Computer Science and software development. I enjoy taking ideas
+            and turning them into working programs, especially when they involve
+            problem solving and creative thinking.
+        </p>
+
+        <p>
+            I mainly work with Python and have also been developing my skills in
+            HTML, CSS, JavaScript, Git and GitHub. I'm particularly interested in
+            game development, algorithms and understanding how software works.
+        </p>
+
+        <p>
+            I'm always working on new projects to improve my programming skills
+            and build a stronger understanding of Computer Science.
+        </p>
+    </section>
+
+    <section id="projects" class="fade-in">
+        <h2>Projects</h2>
+
+        <div class="card-container">
+
+            <div class="project-card fade-in">
+                <div class="project-icon">🧠</div>
+
+                <h3>Bebras Solutions</h3>
+
+                <p>
+                    Python solutions and explanations for Bebras computational
+                    thinking challenges, focusing on algorithms and problem solving.
+                </p>
+
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>Algorithms</span>
+                    <span>Problem Solving</span>
+                </div>
+
+                <a href="bebras.html" class="project-link">
+                    View Project →
+                </a>
             </div>
-        </div>
 
-        <div class="profile-card">
-            <div class="profile-placeholder">
-                <span>👨‍💻</span>
+            <div class="project-card fade-in">
+                <div class="project-icon">🎮</div>
+
+                <h3>Game Development</h3>
+
+                <p>
+                    A collection of Python and Pygame projects exploring game
+                    mechanics, player movement, enemies, collisions and UI systems.
+                </p>
+
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>Pygame</span>
+                    <span>Game Dev</span>
+                </div>
+
+                <a href="https://github.com/slan-123/Life-Sim-2D" class="project-link">
+                    View on GitHub →
+                </a>
             </div>
+
+            <div class="project-card fade-in">
+                <div class="project-icon">🏙️</div>
+
+                <h3>Life Simulator 2D</h3>
+
+                <p>
+                    A 2D life simulation game built with Python and Pygame,
+                    featuring jobs, an economy, inventory, seasons, achievements,
+                    minigames, random events and save/load functionality.
+                </p>
+
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>Pygame</span>
+                    <span>Game Development</span>
+                    <span>OOP</span>
+                </div>
+
+                <a href="life-sim.html" class="project-link">
+                    View Project →
+                </a>
+            </div>
+
         </div>
-    </div>
+    </section>
 
-    <p class="hero-school">
-        Year 10 • Hautlieu School Jersey • Aspiring Computer Scientist
-    </p>
-</header>
+    <!-- =========================
+         PROBLEM SOLVING
+    ========================== -->
 
-<section id="featured">
-<div class="featured-card">
-    <h2>Featured Project</h2>
-    <h3>Bebras Solutions</h3>
-    <p>
-        A collection of Python solutions with explanations for Bebras computational thinking challenges.
-        This project demonstrates problem-solving, algorithmic thinking, and clean code.
-    </p>
-    <a href="bebras.html" class="featured-btn">View Project</a>
-</div>
-</section>
+    <section id="problem-solving" class="fade-in">
 
-<section id="about" class="fade-in">
-<h2>About Me</h2>
+        <h2>Problem Solving</h2>
 
-<p>
-    I'm a Year 10 student at Hautlieu School Jersey with a strong interest
-    in Computer Science and software development. I enjoy taking ideas
-    and turning them into working programs, especially when they involve
-    problem solving and creative thinking.
-</p>
-
-<p>
-    I mainly work with Python and have also been developing my skills in
-    HTML, CSS, JavaScript, Git and GitHub. I'm particularly interested in
-    game development, algorithms and understanding how software works.
-</p>
-
-<p>
-    I'm always working on new projects to improve my programming skills
-    and build a stronger understanding of Computer Science.
-</p>
-</section>
-
-<section id="projects" class="fade-in">
-<h2>Projects</h2>
-
-<div class="card-container">
-
-    <div class="project-card fade-in">
-        <div class="project-icon">🧠</div>
-        <h3>Bebras Solutions</h3>
-        <p>
-            Python solutions and explanations for Bebras computational
-            thinking challenges, focusing on algorithms and problem solving.
+        <p class="problem-solving-intro">
+            I enjoy breaking difficult problems into smaller parts, looking for
+            patterns and testing different approaches until I find a simple solution.
+            Here are some computational thinking problems I've worked through.
         </p>
 
-        <div class="project-tags">
-            <span>Python</span>
-            <span>Algorithms</span>
-            <span>Problem Solving</span>
-        </div>
+        <div class="problem-container">
 
-        <a href="bebras.html" class="project-link">View Project →</a>
-    </div>
+            <!-- DYE BLOCKS -->
 
-    <div class="project-card fade-in">
-        <div class="project-icon">🎮</div>
-        <h3>Game Development</h3>
-        <p>
-            A collection of Python and Pygame projects exploring game
-            mechanics, player movement, enemies, collisions and UI systems.
-        </p>
+            <div class="problem-card fade-in">
 
-        <div class="project-tags">
-            <span>Python</span>
-            <span>Pygame</span>
-            <span>Game Dev</span>
-        </div>
+                <div class="problem-top">
+                    <div class="problem-icon">🧪</div>
 
-        <a href="https://github.com/slan-123/Life-Sim-2D" class="project-link">
-            View on GitHub →
-        </a>
-    </div>
-
-    <div class="project-card fade-in">
-        <div class="project-icon">🏙️</div>
-    
-        <h3>Life Simulator 2D</h3>
-    
-        <p>
-            A 2D life simulation game built with Python and Pygame,
-            featuring jobs, an economy, inventory, seasons, achievements,
-            minigames, random events and save/load functionality.
-        </p>
-    
-        <div class="project-tags">
-            <span>Python</span>
-            <span>Pygame</span>
-            <span>Game Development</span>
-            <span>OOP</span>
-        </div>
-    
-        <a href="life-sim.html" class="project-link">
-            View Project →
-        </a>
-    </div>
-
-</div>
-</section>
-
-<!-- =========================
-     PROBLEM SOLVING
-========================== -->
-
-<section id="problem-solving" class="fade-in">
-    <h2>Problem Solving</h2>
-
-    <p class="problem-solving-intro">
-        I enjoy breaking difficult problems into smaller parts, looking for
-        patterns and testing different approaches until I find a simple solution.
-        Here are some computational thinking problems I've worked through.
-    </p>
-
-    <div class="problem-container">
-
-        <div class="problem-card fade-in">
-            <div class="problem-icon">🧪</div>
-
-            <div class="problem-card-content">
-                <h3>Dye Blocks</h3>
+                    <div class="problem-title">
+                        <h3>Dye Blocks</h3>
+                        <span class="difficulty hard">Hard</span>
+                    </div>
+                </div>
 
                 <p class="problem-description">
-                    A computational thinking problem involving dyes made from
-                    blocks of different types and rules for how the blocks change.
+                    A problem involving dyes made from three blocks of type A or C.
+                    Adding one dye to another changes each block according to a set
+                    of rules. The goal was to swap the dyes in containers 1 and 3
+                    while leaving container 2 unchanged.
                 </p>
 
                 <div class="problem-section">
                     <h4>💭 My reasoning</h4>
+
                     <p>
-                        I started by trying different combinations to understand
-                        how the blocks changed. I noticed that one of the positions
-                        did not actually need to change, which meant I could focus
-                        on swapping the other two positions.
+                        I first noticed that container 2 already contained
+                        <strong>ACA</strong>, which was its required final result.
+                        This meant there was no reason to use container 2, because
+                        changing it would only make the problem more complicated.
+                    </p>
+
+                    <p>
+                        I could therefore focus exclusively on containers 1 and 3.
+                        I experimented with the possible swaps and found the sequence:
+                    </p>
+
+                    <div class="sequence">
+                        3 → 1 → 3 → 1
+                    </div>
+
+                    <p>
+                        Starting with <strong>CAC | ACA | AAC</strong>, the swaps
+                        produce <strong>ACC | ACA | AAC</strong>, then
+                        <strong>ACC | ACA | CAC</strong>, and finally
+                        <strong>AAC | ACA | CAC</strong>.
                     </p>
                 </div>
 
                 <div class="problem-section">
                     <h4>💡 Key observation</h4>
+
                     <p>
-                        Instead of trying every possible combination, I realised
-                        that the problem could be simplified by concentrating on
-                        the positions that actually affected the result.
+                        The most important step was recognising that container 2
+                        was already correct. By identifying something that did not
+                        need to change, I could eliminate unnecessary possibilities
+                        and focus only on containers 1 and 3.
                     </p>
+                </div>
+
+                <div class="problem-answer">
+                    <strong>✅ Answer:</strong> 3 → 1 → 3 → 1
                 </div>
 
                 <div class="problem-tags">
                     <span>Pattern Recognition</span>
                     <span>Logic</span>
-                    <span>Algorithms</span>
+                    <span>Search-Space Reduction</span>
                 </div>
+
             </div>
-        </div>
 
-        <div class="problem-card fade-in">
-            <div class="problem-icon">🔄</div>
 
-            <div class="problem-card-content">
-                <h3>Swapping Problem</h3>
+            <!-- ARISTO'S CARDS -->
+
+            <div class="problem-card fade-in">
+
+                <div class="problem-top">
+                    <div class="problem-icon">🃏</div>
+
+                    <div class="problem-title">
+                        <h3>Aristo's Cards</h3>
+                        <span class="difficulty hard">Hard</span>
+                    </div>
+                </div>
 
                 <p class="problem-description">
-                    A problem involving repeated swaps and determining whether
-                    the final arrangement is guaranteed to have a particular result.
+                    Aristo claims that if one side of a card shows a vowel,
+                    the other side must always show an even number. The task
+                    was to determine which cards must be turned over to test
+                    whether the claim is true.
                 </p>
 
                 <div class="problem-section">
                     <h4>💭 My reasoning</h4>
+
                     <p>
-                        I noticed that an odd number of swaps could still leave
-                        a possibility of getting the wrong arrangement. However,
-                        after an even number of swaps, the elements have effectively
-                        had the opportunity to swap back into their required positions.
+                        I knew that <strong>E</strong> is a vowel, so I had to
+                        turn it over. If there was an odd number behind it,
+                        the claim would immediately be false.
+                    </p>
+
+                    <p>
+                        I also had to turn over <strong>7</strong>. If there was
+                        a vowel on the other side, the claim would also be false.
+                    </p>
+
+                    <p>
+                        I did not need to turn over <strong>V</strong>, because
+                        the claim says nothing about what must be behind a
+                        consonant.
+                    </p>
+
+                    <p>
+                        I also did not need to turn over <strong>2</strong>,
+                        because the claim never says that every even number
+                        must have a vowel on its other side.
                     </p>
                 </div>
 
                 <div class="problem-section">
                     <h4>💡 Key observation</h4>
+
                     <p>
-                        The important part was not just counting the swaps,
-                        but thinking about what each swap does to the arrangement
-                        and how the parity of the number of swaps affects the result.
+                        I focused on finding the cards that could actually
+                        <strong>disprove</strong> the claim instead of checking
+                        every card.
                     </p>
+
+                    <p>
+                        The claim is essentially <strong>vowel → even</strong>,
+                        so I needed to check vowels and odd numbers.
+                    </p>
+                </div>
+
+                <div class="problem-answer">
+                    <strong>✅ Answer:</strong> E and 7
                 </div>
 
                 <div class="problem-tags">
                     <span>Logical Thinking</span>
-                    <span>Patterns</span>
-                    <span>Computational Thinking</span>
+                    <span>Conditional Logic</span>
+                    <span>Problem Solving</span>
                 </div>
+
             </div>
+
+
+            <!-- MAGIC KEY -->
+
+            <div class="problem-card fade-in">
+
+                <div class="problem-top">
+                    <div class="problem-icon">🪄</div>
+
+                    <div class="problem-title">
+                        <h3>Magic Key</h3>
+                        <span class="difficulty medium">Medium</span>
+                    </div>
+                </div>
+
+                <p class="problem-description">
+                    A magic key writes a sequence of numbers to a file.
+                    Each press adds a new block counting down from the press
+                    number to 1. The task was to find the number at position 127.
+                </p>
+
+                <div class="problem-section">
+                    <h4>💭 My reasoning</h4>
+
+                    <p>
+                        I noticed that each press adds a number of values equal
+                        to the press count. So after 15 presses, the total number
+                        of values is:
+                    </p>
+
+                    <div class="sequence">
+                        1 + 2 + 3 + ... + 15 = 120
+                    </div>
+
+                    <p>
+                        This means position 120 is the end of the 15th block.
+                        The 16th block starts at position 121:
+                    </p>
+
+                    <div class="sequence">
+                        16, 15, 14, 13, 12, 11, 10, ...
+                    </div>
+
+                    <p>
+                        Therefore, position 127 contains <strong>10</strong>.
+                    </p>
+                </div>
+
+                <div class="problem-section">
+                    <h4>💡 Key observation</h4>
+
+                    <p>
+                        I didn't need to generate the entire sequence. I used
+                        the pattern of the increasing block lengths to jump
+                        directly to the section containing position 127.
+                    </p>
+                </div>
+
+                <div class="problem-answer">
+                    <strong>✅ Answer:</strong> 10
+                </div>
+
+                <div class="problem-tags">
+                    <span>Pattern Recognition</span>
+                    <span>Mathematical Reasoning</span>
+                    <span>Efficiency</span>
+                </div>
+
+            </div>
+
+
+            <!-- FLOWER PLANTING -->
+
+            <div class="problem-card fade-in">
+
+                <div class="problem-top">
+                    <div class="problem-icon">🌸</div>
+
+                    <div class="problem-title">
+                        <h3>Flower Planting</h3>
+                        <span class="difficulty medium">Medium</span>
+                    </div>
+                </div>
+
+                <p class="problem-description">
+                    A robot plants flowers according to a set of instructions.
+                    It follows signs, remembers the flower it planted, and
+                    copies that flower into the next empty position.
+                </p>
+
+                <div class="problem-section">
+                    <h4>💭 My reasoning</h4>
+
+                    <p>
+                        I started at the position marked with X and followed
+                        the robot's instructions step by step.
+                    </p>
+
+                    <p>
+                        Each time the robot reached a sign, I recorded the
+                        flower it planted. It then moved right to the next
+                        empty position and planted the same flower there.
+                    </p>
+
+                    <p>
+                        Following this process gave the final arrangement:
+                    </p>
+
+                    <div class="sequence">
+                        1 | 1 | 2 | 3 | 2 | 2 | 3 | 2 | 1 | 1
+                    </div>
+                </div>
+
+                <div class="problem-section">
+                    <h4>💡 Key observation</h4>
+
+                    <p>
+                        I noticed that the flowers from the signs were effectively
+                        being copied into the empty spaces. By carefully following
+                        the robot's movement, I could work out the final arrangement
+                        without needing to guess.
+                    </p>
+                </div>
+
+                <div class="problem-answer">
+                    <strong>✅ Answer:</strong> 1, 1, 2, 3, 2, 2, 3, 2, 1, 1
+                </div>
+
+                <div class="problem-tags">
+                    <span>Simulation</span>
+                    <span>Algorithms</span>
+                    <span>Logical Thinking</span>
+                </div>
+
+            </div>
+
+
+            <!-- HAPPY CIRCLE -->
+
+            <div class="problem-card fade-in">
+
+                <div class="problem-top">
+                    <div class="problem-icon">😊</div>
+
+                    <div class="problem-title">
+                        <h3>Happy Circle</h3>
+                        <span class="difficulty medium">Medium</span>
+                    </div>
+                </div>
+
+                <p class="problem-description">
+                    Six friends need to sit around a circular table.
+                    Each friend has preferences about who they want to sit
+                    next to. The goal is to find an arrangement where everyone
+                    is happy with both of their neighbours.
+                </p>
+
+                <div class="problem-section">
+                    <h4>💭 My reasoning</h4>
+
+                    <p>
+                        I treated the problem like a puzzle where each person
+                        had to satisfy the preferences of the people sitting
+                        next to them.
+                    </p>
+
+                    <p>
+                        I tried different arrangements around the circle and
+                        checked the neighbours of each person. By using the
+                        preferences to rule out unsuitable arrangements, I found
+                        an order where everyone was happy.
+                    </p>
+
+                    <div class="sequence">
+                        A → E → C → F → D → B
+                    </div>
+
+                    <p>
+                        Because the table is circular, <strong>B</strong> is
+                        also next to <strong>A</strong>, completing the circle.
+                    </p>
+                </div>
+
+                <div class="problem-section">
+                    <h4>💡 Key observation</h4>
+
+                    <p>
+                        The important part was thinking about the problem as a
+                        set of <strong>constraints</strong>. Instead of only
+                        checking one person at a time, I had to make sure the
+                        entire arrangement worked together.
+                    </p>
+                </div>
+
+                <div class="problem-answer">
+                    <strong>✅ Answer:</strong> A → E → C → F → D → B
+                </div>
+
+                <div class="problem-tags">
+                    <span>Constraint Solving</span>
+                    <span>Logical Reasoning</span>
+                    <span>Combinatorial Thinking</span>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SKILLS -->
+
+    <section id="skills" class="fade-in">
+        <h2>Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">
+                <strong>Python</strong>
+                <span>Programming & Game Development</span>
+            </div>
+
+            <div class="skill">
+                <strong>HTML & CSS</strong>
+                <span>Web Development</span>
+            </div>
+
+            <div class="skill">
+                <strong>JavaScript</strong>
+                <span>Interactive Web Features</span>
+            </div>
+
+            <div class="skill">
+                <strong>Git & GitHub</strong>
+                <span>Version Control & Projects</span>
+            </div>
+
+            <div class="skill">
+                <strong>Problem Solving</strong>
+                <span>Algorithms & Computational Thinking</span>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="fade-in">
+        <h2>Get In Touch</h2>
+
+        <p>
+            Interested in my projects or want to get in touch?
+            Feel free to send me a message.
+        </p>
+
+        <div id="success-message" style="display:none;" class="success-box">
+            Your message has been sent successfully!
         </div>
 
-    </div>
-</section>
+        <form action="https://formsubmit.co/arslan.raiees06@gmail.com" method="POST" class="contact-form">
 
-<section id="skills" class="fade-in">
-<h2>Skills</h2>
+            <!-- FormSubmit settings -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
 
-<div class="skills-container">
+            <label>Your Name</label>
+            <input type="text" name="name" required>
 
-    <div class="skill">
-        <strong>Python</strong>
-        <span>Programming & Game Development</span>
-    </div>
+            <label>Your Email</label>
+            <input type="email" name="email" required>
 
-    <div class="skill">
-        <strong>HTML & CSS</strong>
-        <span>Web Development</span>
-    </div>
+            <label>Your Message</label>
+            <textarea name="message" rows="5" required></textarea>
 
-    <div class="skill">
-        <strong>JavaScript</strong>
-        <span>Interactive Web Features</span>
-    </div>
+            <button type="submit">Send Message</button>
 
-    <div class="skill">
-        <strong>Git & GitHub</strong>
-        <span>Version Control & Projects</span>
-    </div>
+            <input
+                type="hidden"
+                name="_next"
+                value="https://slan-123.github.io/arslan-portfolio/#contact"
+            >
 
-    <div class="skill">
-        <strong>Problem Solving</strong>
-        <span>Algorithms & Computational Thinking</span>
-    </div>
+        </form>
+    </section>
 
-</div>
-</section>
 
-<section id="contact" class="fade-in">
-<h2>Get In Touch</h2>
-<p>
-    Interested in my projects or want to get in touch?
-    Feel free to send me a message.
-</p>
+    <!-- FOOTER -->
 
-<div id="success-message" style="display:none;" class="success-box">
-Your message has been sent successfully!
-</div>
+    <footer>
+        <div class="footer-content">
 
-<form action="https://formsubmit.co/arslan.raiees06@gmail.com" method="POST" class="contact-form">
+            <div>
+                <h3>Mohammed Arslan</h3>
+                <p>Student Developer • Aspiring Computer Scientist</p>
+            </div>
 
-    <!-- FormSubmit settings -->
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_template" value="table">
+            <div class="footer-links">
+                <a href="https://github.com/slan-123">GitHub</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#problem-solving">Problem Solving</a>
+                <a href="#contact">Contact</a>
+            </div>
 
-    <label>Your Name</label>
-    <input type="text" name="name" required>
+        </div>
 
-    <label>Your Email</label>
-    <input type="email" name="email" required>
+        <div class="footer-bottom">
+            <p>© 2026 Mohammed Arslan. Built with HTML, CSS & JavaScript.</p>
+        </div>
+    </footer>
 
-    <label>Your Message</label>
-    <textarea name="message" rows="5" required></textarea>
 
-    <button type="submit">Send Message</button>
-    <input type="hidden" name="_next" value="https://slan-123.github.io/arslan-portfolio/#contact">
+    <!-- Dark Mode -->
 
-</form>
-</section>
+    <script>
+        const toggle = document.getElementById('dark-toggle');
 
-<footer>
-<div class="footer-content">
-    <div>
-        <h3>Mohammed Arslan</h3>
-        <p>Student Developer • Aspiring Computer Scientist</p>
-    </div>
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark');
 
-    <div class="footer-links">
-        <a href="https://github.com/slan-123">GitHub</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#problem-solving">Problem Solving</a>
-        <a href="#contact">Contact</a>
-    </div>
-</div>
+            if (document.body.classList.contains('dark')) {
+                toggle.textContent = "☀️";
+            } else {
+                toggle.textContent = "🌙";
+            }
+        });
+    </script>
 
-<div class="footer-bottom">
-    <p>© 2026 Mohammed Arslan. Built with HTML, CSS & JavaScript.</p>
-</div>
-</footer>
 
-<script>
-const toggle = document.getElementById('dark-toggle');
+    <!-- Success Message -->
 
-toggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark');
+    <script>
+        if (window.location.hash === "#contact") {
+            const box = document.getElementById("success-message");
 
-    // Switch icon
-    if (document.body.classList.contains('dark')) {
-        toggle.textContent = "☀️";
-    } else {
-        toggle.textContent = "🌙";
-    }
-});
-</script>
-
-<script>
-const scrollBtn = document.getElementById("scrollTopBtn");
-
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 300) {
-        scrollBtn.style.display = "block";
-    } else {
-        scrollBtn.style.display = "none";
-    }
-});
-
-scrollBtn.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-});
-</script>
-
-<script>
-// Show success message if redirected after form submission
-if (window.location.hash === "#contact") {
-    const box = document.getElementById("success-message");
-
-    if (box) {
-        box.style.display = "block";
-    }
-}
-</script>
-
-<script>
-const faders = document.querySelectorAll('.fade-in');
-
-const appearOnScroll = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
+            if (box) {
+                box.style.display = "block";
+            }
         }
-    });
-}, { threshold: 0.2 });
+    </script>
 
-faders.forEach(el => appearOnScroll.observe(el));
-</script>
 
-<button id="scrollTopBtn">↑</button>
-```
+    <!-- Fade In Animation -->
+
+    <script>
+        const faders = document.querySelectorAll('.fade-in');
+
+        const appearOnScroll = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.2 });
+
+        faders.forEach(el => appearOnScroll.observe(el));
+    </script>
+
+
+    <!-- Scroll To Top -->
+
+    <button id="scrollTopBtn">↑</button>
+
+    <script>
+        const scrollBtn = document.getElementById("scrollTopBtn");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                scrollBtn.style.display = "block";
+            } else {
+                scrollBtn.style.display = "none";
+            }
+        });
+
+        scrollBtn.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
 
 </body>
 </html>
