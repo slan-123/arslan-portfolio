@@ -1362,4 +1362,128 @@ Life Sim Mobile
 ```
 
 }
+/* =========================
+   Bebras Page Upgrade
+========================= */
 
+.problem-card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+}
+
+.problem-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #2563eb;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.problem-card:hover::before {
+    transform: scaleX(1);
+}
+
+
+/* =========================
+   Problem Icons
+========================= */
+
+.problem-icon {
+    transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.problem-card:hover .problem-icon {
+    transform: scale(1.08);
+}
+
+
+/* =========================
+   Reasoning Sections
+========================= */
+
+.problem-section {
+    padding: 18px;
+    border-radius: 12px;
+    background: #f8fafc;
+    border-left: 4px solid #dbeafe;
+}
+
+.problem-section + .problem-section {
+    margin-top: 18px;
+}
+
+.problem-section h4 {
+    color: #2563eb;
+}
+
+
+/* =========================
+   Answer Highlight
+========================= */
+
+.problem-answer {
+    margin-top: 22px;
+    font-size: 1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.problem-answer:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(22, 101, 52, 0.08);
+}
+
+
+/* =========================
+   Sequence Boxes
+========================= */
+
+.sequence {
+    font-family: Consolas, Monaco, monospace;
+    font-size: 0.95rem;
+    letter-spacing: 0.3px;
+}
+
+
+/* =========================
+   Bebras Dark Mode
+========================= */
+
+body.dark .problem-card {
+    border-color: #30363d;
+}
+
+body.dark .problem-section {
+    background: #111827;
+    border-left-color: #1e3a8a;
+}
+
+body.dark .problem-section h4 {
+    color: #60a5fa;
+}
+
+body.dark .problem-card::before {
+    background: #60a5fa;
+}
+
+
+/* =========================
+   Bebras Mobile
+========================= */
+
+@media (max-width: 700px) {
+
+    .problem-section {
+        padding: 15px;
+    }
+
+    .problem-answer {
+        font-size: 0.95rem;
+    }
+
+}
