@@ -129,8 +129,8 @@ header > p {
 }
 
 .profile-card img {
-    width: 120px;
-    height: 120px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #0077ff;
@@ -1141,10 +1141,4 @@ body.dark .problem-tags span {
         align-items: flex-start;
     }
 }
-.profile-picture {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-    display: block;
-}
+
