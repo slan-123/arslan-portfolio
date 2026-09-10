@@ -1141,4 +1141,225 @@ body.dark .problem-tags span {
         align-items: flex-start;
     }
 }
+/* =========================
+Life Simulator 2D Project Page
+========================= */
+
+.project-header {
+position: relative;
+overflow: hidden;
+}
+
+.project-header::before {
+content: "";
+position: absolute;
+width: 350px;
+height: 350px;
+background: rgba(37, 99, 235, 0.08);
+border-radius: 50%;
+top: -180px;
+left: -120px;
+pointer-events: none;
+}
+
+.project-header::after {
+content: "";
+position: absolute;
+width: 300px;
+height: 300px;
+background: rgba(0, 119, 255, 0.06);
+border-radius: 50%;
+bottom: -170px;
+right: -100px;
+pointer-events: none;
+}
+
+.project-header .hero-label {
+color: #2563eb;
+}
+
+.project-header h1 {
+position: relative;
+z-index: 1;
+}
+
+.project-intro {
+position: relative;
+z-index: 1;
+}
+
+/* =========================
+Project Scale Cards
+========================= */
+
+.project-card {
+position: relative;
+overflow: hidden;
+}
+
+.project-card::after {
+content: "";
+position: absolute;
+width: 80px;
+height: 80px;
+border-radius: 50%;
+background: rgba(37, 99, 235, 0.05);
+right: -30px;
+bottom: -30px;
+transition: transform 0.3s ease;
+}
+
+.project-card:hover::after {
+transform: scale(1.5);
+}
+
+/* =========================
+Life Sim Feature Cards
+========================= */
+
+section .card-container .project-card h3 {
+font-size: 1.15rem;
+margin-bottom: 10px;
+}
+
+section .card-container .project-card p {
+margin-bottom: 0;
+}
+
+/* =========================
+Problem Solving Section
+========================= */
+
+.project-header + section {
+position: relative;
+}
+
+.project-header + section h2 {
+font-size: 1.9rem;
+}
+
+.project-header + section p {
+max-width: 850px;
+line-height: 1.8;
+}
+
+/* =========================
+Gameplay Area
+========================= */
+
+.gameplay-placeholder {
+min-height: 350px;
+position: relative;
+overflow: hidden;
+background:
+linear-gradient(
+135deg,
+#f8fafc,
+#eef4ff
+);
+border: 2px dashed #93c5fd;
+transition:
+transform 0.25s ease,
+border-color 0.25s ease,
+background-color 0.4s ease;
+}
+
+.gameplay-placeholder:hover {
+transform: translateY(-3px);
+border-color: #2563eb;
+}
+
+.gameplay-placeholder span {
+font-size: 4rem;
+}
+
+.gameplay-placeholder p {
+font-weight: 600;
+color: #64748b;
+}
+
+/* =========================
+Source Code Section
+========================= */
+
+section:last-of-type {
+text-align: center;
+}
+
+section:last-of-type p {
+max-width: 650px;
+margin-left: auto;
+margin-right: auto;
+line-height: 1.7;
+}
+
+/* =========================
+Life Sim Dark Mode
+========================= */
+
+body.dark .project-header .hero-label {
+color: #60a5fa;
+}
+
+body.dark .project-header::before {
+background: rgba(37, 99, 235, 0.12);
+}
+
+body.dark .project-header::after {
+background: rgba(37, 99, 235, 0.08);
+}
+
+body.dark .project-card::after {
+background: rgba(96, 165, 250, 0.05);
+}
+
+body.dark .gameplay-placeholder {
+background:
+linear-gradient(
+135deg,
+#111827,
+#172554
+);
+border-color: #374151;
+}
+
+body.dark .gameplay-placeholder:hover {
+border-color: #60a5fa;
+}
+
+body.dark .gameplay-placeholder p {
+color: #9ca3af;
+}
+
+/* =========================
+Life Sim Mobile
+========================= */
+
+@media (max-width: 700px) {
+
+```
+.project-header::before {
+    width: 220px;
+    height: 220px;
+    top: -100px;
+    left: -100px;
+}
+
+.project-header::after {
+    width: 200px;
+    height: 200px;
+    bottom: -100px;
+    right: -80px;
+}
+
+.gameplay-placeholder {
+    min-height: 250px;
+}
+
+.gameplay-placeholder span {
+    font-size: 3rem;
+}
+```
+
+}
 
