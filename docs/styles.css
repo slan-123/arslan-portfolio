@@ -2022,3 +2022,60 @@ body.dark .hero-school {
 body.dark .hero-school:hover {
     box-shadow: 0 8px 25px rgba(96, 165, 250, 0.12);
 }
+/* =========================
+   Featured Project Upgrade
+========================= */
+
+.featured {
+    position: relative;
+    overflow: hidden;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* Decorative glow */
+.featured::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+    top: -260px;
+    right: -120px;
+    pointer-events: none;
+    transition: transform 0.5s ease;
+}
+
+.featured:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 45px rgba(37, 99, 235, 0.25);
+}
+
+.featured:hover::before {
+    transform: scale(1.15);
+}
+
+/* Keep featured content above the glow */
+.featured > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Featured button */
+.featured .btn {
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.featured .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Dark mode */
+body.dark .featured:hover {
+    box-shadow: 0 20px 45px rgba(37, 99, 235, 0.35);
+}
