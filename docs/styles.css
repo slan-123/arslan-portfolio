@@ -1951,3 +1951,43 @@ body.dark .hero-label {
 body.dark .hero-label:hover {
     text-shadow: 0 0 25px rgba(96, 165, 250, 0.45);
 }
+/* Hero entrance animation */
+.hero-text {
+    animation: heroTextIn 0.8s ease-out both;
+}
+
+.profile-card {
+    animation: heroProfileIn 0.8s ease-out 0.15s both;
+}
+
+@keyframes heroTextIn {
+    from {
+        opacity: 0;
+        transform: translateX(-25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes heroProfileIn {
+    from {
+        opacity: 0;
+        transform: translateX(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .hero-text,
+    .profile-card {
+        animation: none;
+    }
+}
