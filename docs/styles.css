@@ -2208,3 +2208,20 @@ body.dark .project-icon {
 body.dark .project-card:hover .project-icon {
     background: rgba(96, 165, 250, 0.16);
 }
+/* =========================
+   Project Title Upgrade
+========================= */
+
+.project-card h3 {
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.project-card:hover h3 {
+    color: #2563eb;
+    transform: translateX(3px);
+}
+
+/* Dark mode */
+body.dark .project-card:hover h3 {
+    color: #60a5fa;
+}
