@@ -2170,3 +2170,41 @@ body.dark .project-tags span:hover {
     background: rgba(96, 165, 250, 0.16);
     box-shadow: 0 4px 12px rgba(96, 165, 250, 0.12);
 }
+/* =========================
+   Project Icon Upgrade
+========================= */
+
+.project-icon {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background: rgba(37, 99, 235, 0.09);
+    border: 1px solid rgba(37, 99, 235, 0.12);
+    font-size: 1.8rem;
+    margin-bottom: 18px;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.08);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.project-card:hover .project-icon {
+    transform: translateY(-4px) rotate(-3deg);
+    background: rgba(37, 99, 235, 0.13);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.15);
+}
+
+/* Dark mode */
+body.dark .project-icon {
+    background: rgba(96, 165, 250, 0.1);
+    border-color: rgba(96, 165, 250, 0.15);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.12);
+}
+
+body.dark .project-card:hover .project-icon {
+    background: rgba(96, 165, 250, 0.16);
+}
