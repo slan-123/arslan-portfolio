@@ -1991,3 +1991,34 @@ body.dark .hero-label:hover {
         animation: none;
     }
 }
+/* Hero school badge */
+.hero-school {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: rgba(37, 99, 235, 0.08);
+    border: 1px solid rgba(37, 99, 235, 0.15);
+    color: #2563eb;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    box-shadow: 0 5px 20px rgba(37, 99, 235, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hero-school:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.12);
+}
+
+/* Dark mode */
+body.dark .hero-school {
+    background: rgba(96, 165, 250, 0.1);
+    border-color: rgba(96, 165, 250, 0.18);
+    color: #93c5fd;
+}
+
+body.dark .hero-school:hover {
+    box-shadow: 0 8px 25px rgba(96, 165, 250, 0.12);
+}
