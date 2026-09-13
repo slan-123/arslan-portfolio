@@ -2225,3 +2225,33 @@ body.dark .project-card:hover .project-icon {
 body.dark .project-card:hover h3 {
     color: #60a5fa;
 }
+/* =========================
+   Skills Section Upgrade
+========================= */
+
+.skill {
+    position: relative;
+    border: 1px solid rgba(37, 99, 235, 0.12);
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.06);
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.skill:hover {
+    transform: translateY(-4px);
+    background: rgba(37, 99, 235, 0.08);
+    box-shadow: 0 8px 22px rgba(37, 99, 235, 0.13);
+}
+
+/* Dark mode */
+body.dark .skill {
+    border-color: rgba(96, 165, 250, 0.15);
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.1);
+}
+
+body.dark .skill:hover {
+    background: rgba(96, 165, 250, 0.1);
+    box-shadow: 0 8px 22px rgba(96, 165, 250, 0.16);
+}
