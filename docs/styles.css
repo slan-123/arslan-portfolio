@@ -1748,3 +1748,111 @@ body.dark .learning-card:hover {
     }
 
 }
+/* =========================
+   Premium Hero Upgrade
+========================= */
+
+header {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Soft background glow */
+header::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: rgba(37, 99, 235, 0.08);
+    top: -250px;
+    right: -150px;
+    pointer-events: none;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: rgba(0, 119, 255, 0.06);
+    bottom: -200px;
+    left: -120px;
+    pointer-events: none;
+}
+
+/* Keep hero content above the background */
+.hero-content,
+.hero-school {
+    position: relative;
+    z-index: 1;
+}
+
+/* Gradient name */
+.hero-text h1 {
+    background: linear-gradient(90deg, #2563eb, #0077ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Make the small introduction stand out */
+.hero-label {
+    color: #2563eb;
+}
+
+/* More polished profile image */
+.profile-card img {
+    box-shadow: 0 15px 40px rgba(37, 99, 235, 0.18);
+}
+
+/* Slightly nicer primary button */
+.hero-btn.primary {
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background-color 0.25s ease;
+}
+
+.hero-btn.primary:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.35);
+}
+
+/* Dark mode */
+body.dark header::before {
+    background: rgba(37, 99, 235, 0.12);
+}
+
+body.dark header::after {
+    background: rgba(37, 99, 235, 0.08);
+}
+
+body.dark .hero-text h1 {
+    background: linear-gradient(90deg, #60a5fa, #93c5fd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+body.dark .hero-label {
+    color: #60a5fa;
+}
+
+/* Mobile adjustments */
+@media (max-width: 700px) {
+    header::before {
+        width: 300px;
+        height: 300px;
+        top: -150px;
+        right: -120px;
+    }
+
+    header::after {
+        width: 250px;
+        height: 250px;
+        bottom: -150px;
+        left: -100px;
+    }
+}
